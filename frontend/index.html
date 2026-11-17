@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Image Recognition</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="card">
+  <h1>AI Image Recognition</h1>
+  <p class="sub">Upload a JPG/PNG (max 5 MB) and let MobileNetV2 guess what's in it.</p>
+  <input type="file" id="file" accept=".jpg,.jpeg,.png">
+  <div><button id="cam">Use Webcam</button></div>
+  <video id="video" autoplay hidden></video>
+  <button id="snap" hidden>Capture</button>
+  <img id="preview" alt="Preview" hidden>
+  <button id="predict" disabled>Predict</button>
+  <p id="error" class="error" hidden></p>
+  <p id="warn" class="warn" hidden></p>
+  <ul id="results"></ul>
+  <button id="download" hidden>Download results (TXT)</button>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
